@@ -12,6 +12,6 @@ angular.module('tutorialApp')
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
-      'Karma'
+      'Karma tester'
     ];
   });
