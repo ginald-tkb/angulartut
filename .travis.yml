@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - '0.10'
+env:
+  global:
+  - CODECLIMATE_REPO_TOKEN=05232e5ee3d603b30e70883001455e2047969230c149e924c1f293bc172dbab7 codeclimate-test-reporter < coverage/**/lcov.info
+before_script:
+  - npm install -g bower grunt-cli
+  - bower install
+after_script:
+  - codeclimate-test-reporter < coverage/**/lcov.info
